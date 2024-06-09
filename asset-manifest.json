@@ -1,0 +1,11 @@
+{
+  "files": {
+    "main.js": "/ecom_website_react/static/js/main.ce1a996a.js",
+    "static/media/bg-img.png": "/ecom_website_react/static/media/bg-img.41eb1ad28babba8720f6.png",
+    "index.html": "/ecom_website_react/index.html",
+    "main.ce1a996a.js.map": "/ecom_website_react/static/js/main.ce1a996a.js.map"
+  },
+  "entrypoints": [
+    "static/js/main.ce1a996a.js"
+  ]
+}
