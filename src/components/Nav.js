@@ -175,7 +175,7 @@ const Nav = () => {
           </li>
           <li>
             <NavLink
-              to="/about"
+              to="/ecom_website_react/about"
               className="navbar-link "
               onClick={() => setMenuIcon(false)}>
               About
@@ -183,7 +183,7 @@ const Nav = () => {
           </li>
           <li>
             <NavLink
-              to="/products"
+              to="/ecom_website_react/products"
               className="navbar-link "
               onClick={() => setMenuIcon(false)}>
               Products
@@ -191,14 +191,14 @@ const Nav = () => {
           </li>
           <li>
             <NavLink
-              to="/contact"
+              to="/ecom_website_react/contact"
               className="navbar-link "
               onClick={() => setMenuIcon(false)}>
               Contact
             </NavLink>
           </li>
           <li>
-            <NavLink to="/cart" className="navbar-link cart-trolley--link">
+            <NavLink to="/ecom_website_react/cart" className="navbar-link cart-trolley--link">
               <FiShoppingCart className="cart-trolley" />
               <span className="cart-total--item"> 
               {total_item} 
