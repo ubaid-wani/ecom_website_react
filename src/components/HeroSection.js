@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { Button } from "../styles/Button";
 import imgbg from "../myimgs/bg-img.png"
+import heroimg from "../myimgs/banner-img.png"
 
 const HeroSection = ({ mytitle,myData,myinfo }) => {
 
@@ -23,7 +24,7 @@ const HeroSection = ({ mytitle,myData,myinfo }) => {
           <div className="hero-section-image">
             <figure>
               <img
-                src="myimages/banner-img.png"
+                src={heroimg}
                 alt="hero-section-photo"
                 className="img-style"
               />
@@ -36,7 +37,7 @@ const HeroSection = ({ mytitle,myData,myinfo }) => {
 };
 
 const Wrapper = styled.section`
-  padding: 12rem 0;
+  padding: 2rem 0;
   background:url(${imgbg});
   background-size:cover;
 

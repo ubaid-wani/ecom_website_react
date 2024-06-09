@@ -32,7 +32,6 @@ const SingleProduct = () => {
   } = singleProduct;
   
   useEffect(() => {
-    console.log("uuu")
     getSingleProduct(id);
   }, []);
 

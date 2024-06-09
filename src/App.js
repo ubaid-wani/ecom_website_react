@@ -45,7 +45,7 @@ const App = () => {
         <GlobalStyle />
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/ecom_website_react" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/products" element={<Products />} />
           <Route path="/contact" element={<Contact />} />
