@@ -49,7 +49,7 @@ const AddToCart = ({ product }) => {
         setIncrease={setIncrease}
       />
 
-      <NavLink to="/cart" 
+      <NavLink to="/ecom_website_react/cart" 
      onClick={() => addToCart(id, color, amount,image, product)}
       >
         <Button className="btn">Add To Cart</Button>

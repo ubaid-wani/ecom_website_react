@@ -16,7 +16,7 @@ const HeroSection = ({ mytitle,myData,myinfo }) => {
             <p>
              {myinfo}
             </p>
-            <NavLink>
+            <NavLink to="/ecom_website_react/products">
               <Button>shop now</Button>
             </NavLink>
           </div>

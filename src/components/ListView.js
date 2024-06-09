@@ -22,7 +22,7 @@ const ListView = ({ products }) => {
                 </p>
                 <p>{description.slice(0, 90)}...</p>
 
-                <NavLink to={`/singleproduct/${id}`} className="btn-main">
+                <NavLink to={`/ecom_website_react/singleproduct/${id}`} className="btn-main">
                   <Button className="btn">Read More</Button>
                 </NavLink>
               </div>
