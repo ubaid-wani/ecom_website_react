@@ -142,7 +142,10 @@ const cartReducer = (state, action) => {
   // }
 
   if (action.type === "CART_ITEM_PRICE_TOTAL") {
+    console.log(state.cart);
+    console.log("after cart rice total")
     let { total_item, total_price } = state.cart.reduce(
+
       (accum, curElem) => {
         let { price, amount } = curElem;
 

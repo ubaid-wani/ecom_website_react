@@ -7,7 +7,8 @@ const CartContext = createContext();
 // get data from local storage
 const getLocalCartData = () => {
   let newCartdata = localStorage.getItem("wanicart");
-  if( newCartdata===[]) {
+  console.log(`ubaid.......${newCartdata}`);
+  if( newCartdata === null) {
     return [];
   } else {
     return JSON.parse(newCartdata);
@@ -24,7 +25,7 @@ const getLocalCartData = () => {
 
  const CartProvider = ({ children }) => {
    const [state, dispatch] = useReducer(reducer, initialState);
-
+   console.log(`ubaid.......${state.cart}`);
   const addToCart = (id, color, amount,image, product) => {
    dispatch({ type: "ADD_TO_CART", payload: { id, color, amount,image, product } });
   };
@@ -57,6 +58,7 @@ const getLocalCartData = () => {
     // dispatch({ type: "CART_TOTAL_PRICE" });
      dispatch({ type: "CART_ITEM_PRICE_TOTAL" });
    localStorage.setItem("wanicart", JSON.stringify(state.cart));
+   console.log("state change")
   }, [state.cart]);
 
   return (
