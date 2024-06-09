@@ -7,7 +7,6 @@ const CartContext = createContext();
 // get data from local storage
 const getLocalCartData = () => {
   let newCartdata = localStorage.getItem("wanicart");
-  console.log(`ubaid.......${newCartdata}`);
   if( newCartdata === null) {
     return [];
   } else {

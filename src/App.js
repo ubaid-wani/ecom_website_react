@@ -46,12 +46,12 @@ const App = () => {
         <Header />
         <Routes>
           <Route path="/ecom_website_react" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/singleproduct/:id" element={<SingleProduct />} />
-          <Route path="/cart" element={<Cart />} />
-          <Route path="*" element={<ErrorPage />} />
+          <Route path="/ecom_website_react/about" element={<About />} />
+          <Route path="/ecom_website_react/products" element={<Products />} />
+          <Route path="/ecom_website_react/contact" element={<Contact />} />
+          <Route path="/ecom_website_react/singleproduct/:id" element={<SingleProduct />} />
+          <Route path="/ecom_website_react/cart" element={<Cart />} />
+          <Route path="/ecom_website_react/*" element={<ErrorPage />} />
         </Routes>
         <Footer />
       </Router>
