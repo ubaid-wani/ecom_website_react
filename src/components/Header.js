@@ -7,7 +7,7 @@ import img from "../myimgs/logo_1.jpg"
 const Header = () => {
   return (
     <MainHeader>
-      <NavLink to="/ecom_website_react">
+      <NavLink to="/ecom_website_react/">
         <img src={img} alt="my logo img" className="logo"/>
       </NavLink>
       <Nav />
