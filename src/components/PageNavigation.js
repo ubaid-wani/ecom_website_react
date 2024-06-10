@@ -5,7 +5,7 @@ import styled from "styled-components";
 const PageNavigation = ({ title }) => {
   return (
     <Wrapper>
-      <NavLink to="/ecom_website_react" className='navbar-link-color'>Home</NavLink>/{title}
+      <NavLink to="/ecom_website_react/" className='navbar-link-color'>Home</NavLink>/{title}
     </Wrapper>
   );
 };

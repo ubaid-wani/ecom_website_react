@@ -23,11 +23,7 @@ const HeroSection = ({ mytitle,myData,myinfo }) => {
           {/* our homepage image  */}
           <div className="hero-section-image">
             <figure>
-              <img
-                src={heroimg}
-                alt="hero-section-photo"
-                className="img-style"
-              />
+              <img src={heroimg} alt="hero-section-pics" className="img-style"/>
             </figure>
           </div>
         </div>
@@ -72,7 +68,7 @@ const Wrapper = styled.section`
     }
   }
 
-  .hero-section-image {
+  .hero-section-pics {
     width: 100%;
     height: auto;
     display: flex;

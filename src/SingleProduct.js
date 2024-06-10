@@ -19,12 +19,11 @@ const SingleProduct = () => {
   const { id } = useParams();
   // console.log(singleProduct)
   const {
-    id: alias,
+    // id: alias,
     name,
     company,
     price,
     description,
-    category,
     stock,
     stars,
     reviews,
@@ -33,7 +32,7 @@ const SingleProduct = () => {
   
   useEffect(() => {
     getSingleProduct(id);
-  }, []);
+  });
 
   if (isSingleLoading) {
     return <div className="page_loading">Loading.....</div>;
@@ -47,7 +46,7 @@ const SingleProduct = () => {
           {/* product Images  */}
           <div className="product_images">
       
-            <img src={image} className="image-style"/>
+            <img src={image} alt="myimg"   className="image-style"/>
           </div>
 
           {/* product dAta  */}
