@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { BsLinkedin } from "react-icons/bs";
-import { FaGithub } from "react-icons/fa";
+import { FaGithub,FaHeart  } from "react-icons/fa";
 import { IoMdMail } from "react-icons/io";
 const Footer = () => {
   return (
@@ -49,15 +49,10 @@ const Footer = () => {
 
           <div className="footer-bottom--section">
             <hr />
-            <div className="container grid grid-two-column ">
-              <p>
-                @{new Date().getFullYear()} Ubaid Ashraf. All Rights Reserved
-              </p>
-              <div>
-                <p>PRIVACY POLICY</p>
-                <p>TERMS & CONDITIONS</p>
-              </div>
+            <div className="footer-center">
+            <p> Made with <FaHeart style={{color:"#2eff2e"}} /> by Ubaid Ashraf Wani </p>
             </div>
+            
           </div>
         </footer>
       </Wrapper>
@@ -107,6 +102,15 @@ const Wrapper = styled.section`
       color: ${({ theme }) => theme.colors.hr};
       height: 0.1px;
     }
+    .footer-center{
+      padding-top: 3rem;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      font-size:30rem;
+      color:red;
+    }
+   
   }
 
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
