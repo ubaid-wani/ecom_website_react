@@ -103,7 +103,7 @@ const Wrapper = styled.section`
       height: 0.1px;
     }
     .footer-center{
-      padding-top: 3rem;
+      padding-top: 4rem;
       display:flex;
       align-items:center;
       justify-content:center;
@@ -126,11 +126,14 @@ const Wrapper = styled.section`
     }
 
     footer {
-      padding: 9rem 0 9rem 0;
+      padding: 9rem 0 1rem 0;
     }
 
     .footer-bottom--section {
       padding-top: 4.8rem;
+      .footer-center{
+      padding: 2rem 0 3rem 0;
+
     }
   }
 `;
